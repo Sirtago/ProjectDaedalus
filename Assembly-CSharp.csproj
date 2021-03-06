@@ -9,7 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{1b82ff0b-a2e8-c749-23b5-d03406f22dc2}</ProjectGuid>
+    <ProjectGuid>{c0c0655e-3a51-305d-ace8-9164bce5df65}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -36,7 +36,10 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>
+     <Compile Include="Assets\RoomTemplates.cs" />
      <Compile Include="Assets\RoomSpawner.cs" />
+     <Compile Include="Assets\Destroyer.cs" />
+     <Compile Include="Assets\AddRoom.cs" />
     <Reference Include="UnityEngine">
         <HintPath>C:/Program Files/Unity/Hub/Editor/2020.2.4f1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>
     </Reference>
@@ -611,34 +614,34 @@
         <HintPath>C:/Program Files/Unity/Hub/Editor/2020.2.4f1/Editor/Data/NetStandard/compat/2.0.0/shims/netfx/System.Xml.Serialization.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VSCode.Editor">
-        <HintPath>C:/Users/vabss/OneDrive/Documents/Personal Projects/ProjectDaedalus/Project Daedalus/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
+        <HintPath>C:/Users/vabss/OneDrive/Documents/Personal Projects/ProjectDaedalus/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro.Editor">
-        <HintPath>C:/Users/vabss/OneDrive/Documents/Personal Projects/ProjectDaedalus/Project Daedalus/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
+        <HintPath>C:/Users/vabss/OneDrive/Documents/Personal Projects/ProjectDaedalus/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VisualStudio.Editor">
-        <HintPath>C:/Users/vabss/OneDrive/Documents/Personal Projects/ProjectDaedalus/Project Daedalus/Library/ScriptAssemblies/Unity.VisualStudio.Editor.dll</HintPath>
+        <HintPath>C:/Users/vabss/OneDrive/Documents/Personal Projects/ProjectDaedalus/Library/ScriptAssemblies/Unity.VisualStudio.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Timeline.Editor">
-        <HintPath>C:/Users/vabss/OneDrive/Documents/Personal Projects/ProjectDaedalus/Project Daedalus/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
+        <HintPath>C:/Users/vabss/OneDrive/Documents/Personal Projects/ProjectDaedalus/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Timeline">
-        <HintPath>C:/Users/vabss/OneDrive/Documents/Personal Projects/ProjectDaedalus/Project Daedalus/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
+        <HintPath>C:/Users/vabss/OneDrive/Documents/Personal Projects/ProjectDaedalus/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro">
-        <HintPath>C:/Users/vabss/OneDrive/Documents/Personal Projects/ProjectDaedalus/Project Daedalus/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEditor.UI">
-        <HintPath>C:/Users/vabss/OneDrive/Documents/Personal Projects/ProjectDaedalus/Project Daedalus/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.Rider.Editor">
-        <HintPath>C:/Users/vabss/OneDrive/Documents/Personal Projects/ProjectDaedalus/Project Daedalus/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEngine.UI">
-        <HintPath>C:/Users/vabss/OneDrive/Documents/Personal Projects/ProjectDaedalus/Project Daedalus/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
+        <HintPath>C:/Users/vabss/OneDrive/Documents/Personal Projects/ProjectDaedalus/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
     </Reference>
     <Reference Include="Unity.2D.Sprite.Editor">
-        <HintPath>C:/Users/vabss/OneDrive/Documents/Personal Projects/ProjectDaedalus/Project Daedalus/Library/ScriptAssemblies/Unity.2D.Sprite.Editor.dll</HintPath>
+        <HintPath>C:/Users/vabss/OneDrive/Documents/Personal Projects/ProjectDaedalus/Library/ScriptAssemblies/Unity.2D.Sprite.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.UI">
+        <HintPath>C:/Users/vabss/OneDrive/Documents/Personal Projects/ProjectDaedalus/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Rider.Editor">
+        <HintPath>C:/Users/vabss/OneDrive/Documents/Personal Projects/ProjectDaedalus/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UI">
+        <HintPath>C:/Users/vabss/OneDrive/Documents/Personal Projects/ProjectDaedalus/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
