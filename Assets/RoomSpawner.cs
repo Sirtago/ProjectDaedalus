@@ -49,8 +49,8 @@ public class RoomSpawner : MonoBehaviour
             if(col.GetComponent<RoomSpawner>().isSpawned == false && isSpawned == false)
             {
                 //Spawn wall to block opening
-                Instantiate(templates.closedRooms, transform.position, Quaternion.identity);
-            Destroy(gameObject);
+                Instantiate(templates.closedRooms, transform.position, templates.closedRooms.transform.rotation);
+                Destroy(gameObject);
             }
                 isSpawned = true;
         }
