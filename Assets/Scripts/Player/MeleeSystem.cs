@@ -4,35 +4,28 @@ using UnityEngine;
 
 public class MeleeSystem : MonoBehaviour
 {
-public Transform attackPos;
-public float attackRadius;
- public int maxObjectsHit = 5;
-public Collider2D[] enemiesHit;
-public LayerMask whatIsEnemy;
-
+public Camera cam;
 //Rotation Props
-
- 
-    void Start () {
-        enemiesHit = new Collider2D[maxObjectsHit];
-    }
- 
+private Vector2 mousePos;
+public GameObject bullet;
+public Transform shootPos;
     void Update () {
-        if(Input.GetMouseButtonDown(0))        {
- 
-            Physics2D.OverlapCircleNonAlloc(attackPos.position, attackRadius, enemiesHit, whatIsEnemy);
-            if(enemiesHit.Length > 0)  
-            {
-                foreach(Collider2D hit in enemiesHit)
-                {
-                    // REDUCE THEIR HEALTH;
-                    Debug.Log("ENEMY HIT");
-                }
-            }
+        if(Input.GetMouseButtonDown(0))        
+        {
+            Shoot();
         }
+        mousePos = cam.ScreenToWorldPoint(Input.mousePosition);
+
     }
-    void OnDrawGizmosSelected()
+    void FixedUpdate()
     {
-        Gizmos.DrawWireSphere(attackPos.transform.position, attackRadius);
-    }   
+        Vector2 lookDir = mousePos - new Vector2(transform.position.x, transform.position.y);
+        float angle = Mathf.Atan2(lookDir.y, lookDir.x) * Mathf.Rad2Deg ;
+        transform.rotation = Quaternion.Euler(0, 0, angle);
+
+    }
+    void Shoot()
+    {
+        Instantiate(bullet, shootPos.transform.position, transform.rotation);
+    }
 }
