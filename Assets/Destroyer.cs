@@ -8,7 +8,7 @@ public class Destroyer : MonoBehaviour
     {
         if(col.CompareTag("Room"))
         {
-        Destroy(col.gameObject);
+        Destroy(gameObject);
         }
     }
 }

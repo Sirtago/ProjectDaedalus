@@ -39,11 +39,12 @@
      <Compile Include="Assets\RoomTemplates.cs" />
      <Compile Include="Assets\Scripts\Player\PlayerMovement.cs" />
      <Compile Include="Assets\AddRoom.cs" />
+     <Compile Include="Assets\Scripts\Enemies\EnemyHealth.cs" />
      <Compile Include="Assets\RoomSpawner.cs" />
      <Compile Include="Assets\Scripts\Camera\CameraSnap.cs" />
-     <Compile Include="Assets\Destroyer.cs" />
      <Compile Include="Assets\Scripts\Player\MeleeSystem.cs" />
-     <Compile Include="Assets\Scripts\Enemies\EnemyHealth.cs" />
+     <Compile Include="Assets\Destroyer.cs" />
+     <Compile Include="Assets\Scripts\Player\Bullet.cs" />
     <Reference Include="UnityEngine">
         <HintPath>C:/Program Files/Unity/Hub/Editor/2020.2.4f1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>
     </Reference>

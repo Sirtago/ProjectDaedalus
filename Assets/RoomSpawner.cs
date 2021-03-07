@@ -12,7 +12,7 @@ public class RoomSpawner : MonoBehaviour
     void Start()
     {
         templates = GameObject.FindGameObjectWithTag("Rooms").GetComponent<RoomTemplates>();
-        Invoke("Spawn", 0.1f);
+        Invoke("Spawn", 0.4f);
     }
 
     // Update is called once per frame
@@ -50,9 +50,9 @@ public class RoomSpawner : MonoBehaviour
             {
                 //Spawn wall to block opening
                 Instantiate(templates.closedRooms, transform.position, templates.closedRooms.transform.rotation);
-                Destroy(gameObject);
+                //Destroy(gameObject);
             }
-                isSpawned = true;
+            isSpawned = true;
         }
     }
 }
