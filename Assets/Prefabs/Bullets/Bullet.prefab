@@ -135,5 +135,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bulletSpeed: 5
-  damageDealt: 0
+  damageDealt: 1
   shotLife: 1

@@ -29,6 +29,8 @@ public class BasicBullet : MonoBehaviour
         if(col.gameObject.CompareTag("Enemy"))
         {
             //DAMAGE ENEMY
+            col.gameObject.GetComponent<EnemyHealth>().TakeDamage(damageDealt);
+            Destroy(gameObject);
         }
         if(col.gameObject.CompareTag("Wall"))
         {
