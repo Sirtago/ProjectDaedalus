@@ -2,14 +2,15 @@ ScriptsOnlyBuild:
   usedScripts:
     Assembly-CSharp.dll:
     - AddRoom
-    - Bullet
+    - BasicBullet
     - CameraSnap
     - Destroyer
     - EnemyHealth
-    - MeleeSystem
+    - EnemySpawning
     - PlayerMovement
     - RoomSpawner
     - RoomTemplates
+    - ShootingSystem
     Unity.Rider.Editor.dll:
     - Packages.Rider.Editor.UnitTesting.CallbackData
     UnityEditor.TestRunner.dll:
@@ -55,33 +56,35 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 1506}
+      Script: {instanceID: 1514}
     - Class: 114
-      Script: {instanceID: 1854}
+      Script: {instanceID: 1862}
     - Class: 114
-      Script: {instanceID: 1928}
+      Script: {instanceID: 1936}
     - Class: 114
-      Script: {instanceID: 2376}
+      Script: {instanceID: 2384}
     - Class: 114
-      Script: {instanceID: 2548}
+      Script: {instanceID: 2556}
     - Class: 114
-      Script: {instanceID: 2646}
+      Script: {instanceID: 2654}
     - Class: 114
-      Script: {instanceID: 2756}
+      Script: {instanceID: 2670}
     - Class: 114
-      Script: {instanceID: 2830}
+      Script: {instanceID: 2766}
     - Class: 114
-      Script: {instanceID: 3070}
+      Script: {instanceID: 2840}
     - Class: 114
-      Script: {instanceID: 3196}
+      Script: {instanceID: 3080}
     - Class: 114
-      Script: {instanceID: 3264}
+      Script: {instanceID: 3206}
     - Class: 114
-      Script: {instanceID: 3402}
+      Script: {instanceID: 3412}
     - Class: 114
-      Script: {instanceID: 3462}
+      Script: {instanceID: 3472}
     - Class: 114
-      Script: {instanceID: 18930}
+      Script: {instanceID: 19688}
+    - Class: 114
+      Script: {instanceID: 21102}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 157
@@ -377,6 +380,12 @@ ScriptsOnlyBuild:
     className: CanvasScaler
   - hash:
       serializedVersion: 2
+      Hash: 9fed26a2876e35f77ecd8faa4ef7db5d
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: BasicBullet
+  - hash:
+      serializedVersion: 2
       Hash: ef5c43f921427d03730f6ea4c848f07d
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
@@ -491,12 +500,6 @@ ScriptsOnlyBuild:
     className: TestResultRendererCallback
   - hash:
       serializedVersion: 2
-      Hash: 625021f40dd54e2f1ae3bf5fc01e035c
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: MeleeSystem
-  - hash:
-      serializedVersion: 2
       Hash: 748dd2a2a28da4e618912da5ac45684b
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.EventSystems
@@ -575,10 +578,16 @@ ScriptsOnlyBuild:
     className: TextContainer
   - hash:
       serializedVersion: 2
-      Hash: 9fed26a2876e35f77ecd8faa4ef7db5d
+      Hash: f0e70b829910efee99b13bde8f33ecee
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
-    className: Bullet
+    className: ShootingSystem
+  - hash:
+      serializedVersion: 2
+      Hash: a104461777379b336527166e36639f36
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: EnemySpawning
   platform: 5
   scenePathNames:
   - Assets/Scenes/SampleScene.unity

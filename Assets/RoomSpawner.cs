@@ -18,6 +18,7 @@ public class RoomSpawner : MonoBehaviour
     // Update is called once per frame
     void Spawn()
     {
+        //Entrance Directions
         if(isSpawned == false){
         if(openingDirection == 1)
         {
@@ -42,6 +43,7 @@ public class RoomSpawner : MonoBehaviour
         isSpawned = true;
         }
     }
+    //Safety Checks
     void OnTriggerEnter2D(Collider2D col)
     {
         if(col.CompareTag("SpawnPoint"))
