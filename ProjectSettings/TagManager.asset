@@ -9,6 +9,8 @@ TagManager:
   - Room
   - Wall
   - Enemy
+  - Boss
+  - Game Manager
   layers:
   - Default
   - TransparentFX

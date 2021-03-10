@@ -15,5 +15,4 @@ void Start()
     Instantiate(enemies[rand], transform.position, Quaternion.identity);
     }else{return;}
 }
-
 }

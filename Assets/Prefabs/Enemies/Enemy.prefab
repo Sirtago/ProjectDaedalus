@@ -145,6 +145,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemyHealth: 2
+  value: 1
 --- !u!1 &1222697339079637160
 GameObject:
   m_ObjectHideFlags: 0

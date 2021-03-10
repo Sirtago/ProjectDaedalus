@@ -5,22 +5,21 @@ using UnityEngine;
 public class EnemyHealth : MonoBehaviour
 {
     public float enemyHealth;
-    // Start is called before the first frame update
+    public int value;
+    private GameObject player;
+    private GameObject gameManger;
+
     void Start()
     {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+        player = GameObject.FindGameObjectWithTag("Player");
+        gameManger = GameObject.FindGameObjectWithTag("Game Manager");
     }
     public void TakeDamage(float damage)
     {
         enemyHealth -= damage;
         if(enemyHealth <= 0)
         {
+            player.GetComponent<PlayerCurrency>().AddCurrency(value);
             Die();
         }
     }

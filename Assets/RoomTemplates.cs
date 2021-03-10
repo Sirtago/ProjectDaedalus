@@ -13,8 +13,10 @@ public class RoomTemplates : MonoBehaviour
 
     public List<GameObject> rooms;
     public float waitTime;
-    private bool SpawnedBoss;
     public GameObject boss;
+    [HideInInspector]
+    public bool SpawnedBoss;
+    
 
     void Update()
     {
