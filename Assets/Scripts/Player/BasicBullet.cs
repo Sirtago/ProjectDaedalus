@@ -26,13 +26,17 @@ public class BasicBullet : MonoBehaviour
     //Bullet Collision
     void OnTriggerEnter2D(Collider2D col)
     {
+        if(col == null)
+        {
+            return;
+        }
         if(col.gameObject.CompareTag("Enemy"))
         {
             //DAMAGE ENEMY
             col.gameObject.GetComponent<EnemyHealth>().TakeDamage(damageDealt);
             Destroy(gameObject);
         }
-        if(col.gameObject.CompareTag("Wall"))
+        else if(col.gameObject.CompareTag("Wall"))
         {
             Destroy(gameObject);
         }
