@@ -3,16 +3,27 @@ ScriptsOnlyBuild:
     Assembly-CSharp.dll:
     - AddRoom
     - BasicBullet
+    - BasicEnemyMovement
     - CameraSnap
+    - DDOL
+    - DataManager
     - Destroyer
     - EnemyHealth
+    - EnemyLoader
     - EnemySpawning
+    - PlayerCurrency
     - PlayerMovement
     - RoomSpawner
     - RoomTemplates
     - ShootingSystem
     Unity.Rider.Editor.dll:
     - Packages.Rider.Editor.UnitTesting.CallbackData
+    Unity.TextMeshPro.dll:
+    - TMPro.TMP_FontAsset
+    - TMPro.TMP_Settings
+    - TMPro.TMP_SpriteAsset
+    - TMPro.TMP_StyleSheet
+    - TMPro.TextMeshProUGUI
     UnityEditor.TestRunner.dll:
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
     - UnityEditor.TestTools.TestRunner.TestListCacheData
@@ -24,7 +35,7 @@ ScriptsOnlyBuild:
     - UnityEngine.UI.GraphicRaycaster
     - UnityEngine.UI.RawImage
   sceneClasses:
-    Assets/Scenes/SampleScene.unity:
+    Assets/Scenes/Level 1.unity:
     - Class: 1
       Script: {instanceID: 0}
     - Class: 4
@@ -36,6 +47,8 @@ ScriptsOnlyBuild:
     - Class: 28
       Script: {instanceID: 0}
     - Class: 48
+      Script: {instanceID: 0}
+    - Class: 49
       Script: {instanceID: 0}
     - Class: 50
       Script: {instanceID: 0}
@@ -53,39 +66,59 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 104
       Script: {instanceID: 0}
-    - Class: 108
-      Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 1514}
+      Script: {instanceID: 1532}
     - Class: 114
-      Script: {instanceID: 1862}
+      Script: {instanceID: 1842}
     - Class: 114
-      Script: {instanceID: 1936}
+      Script: {instanceID: 1880}
     - Class: 114
-      Script: {instanceID: 2384}
+      Script: {instanceID: 1954}
     - Class: 114
-      Script: {instanceID: 2556}
+      Script: {instanceID: 2148}
     - Class: 114
-      Script: {instanceID: 2654}
+      Script: {instanceID: 2156}
     - Class: 114
-      Script: {instanceID: 2670}
+      Script: {instanceID: 2232}
     - Class: 114
-      Script: {instanceID: 2766}
+      Script: {instanceID: 2310}
     - Class: 114
-      Script: {instanceID: 2840}
+      Script: {instanceID: 2410}
     - Class: 114
-      Script: {instanceID: 3080}
+      Script: {instanceID: 2582}
     - Class: 114
-      Script: {instanceID: 3206}
+      Script: {instanceID: 2680}
     - Class: 114
-      Script: {instanceID: 3412}
+      Script: {instanceID: 2696}
     - Class: 114
-      Script: {instanceID: 3472}
+      Script: {instanceID: 2726}
     - Class: 114
-      Script: {instanceID: 19688}
+      Script: {instanceID: 2792}
     - Class: 114
-      Script: {instanceID: 21102}
+      Script: {instanceID: 2866}
+    - Class: 114
+      Script: {instanceID: 2896}
+    - Class: 114
+      Script: {instanceID: 2908}
+    - Class: 114
+      Script: {instanceID: 2928}
+    - Class: 114
+      Script: {instanceID: 3086}
+    - Class: 114
+      Script: {instanceID: 3110}
+    - Class: 114
+      Script: {instanceID: 3236}
+    - Class: 114
+      Script: {instanceID: 3266}
+    - Class: 114
+      Script: {instanceID: 3418}
+    - Class: 114
+      Script: {instanceID: 3444}
+    - Class: 114
+      Script: {instanceID: 3504}
     - Class: 115
+      Script: {instanceID: 0}
+    - Class: 128
       Script: {instanceID: 0}
     - Class: 157
       Script: {instanceID: 0}
@@ -116,7 +149,7 @@ ScriptsOnlyBuild:
     className: Image
   - hash:
       serializedVersion: 2
-      Hash: 727dcc1d6bc11b68c7f84a66287ad419
+      Hash: 21d5a1e388fa16fd639df3463c88d1f4
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: RoomTemplates
@@ -272,6 +305,18 @@ ScriptsOnlyBuild:
     className: EventTrigger
   - hash:
       serializedVersion: 2
+      Hash: a104461777379b336527166e36639f36
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: EnemySpawning
+  - hash:
+      serializedVersion: 2
+      Hash: f0e70b829910efee99b13bde8f33ecee
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: ShootingSystem
+  - hash:
+      serializedVersion: 2
       Hash: a81d4c2c1cf3ad164d277d927a193679
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
@@ -308,10 +353,22 @@ ScriptsOnlyBuild:
     className: SignalTrack
   - hash:
       serializedVersion: 2
+      Hash: d9765fa4136e5fc24f05ded96a113d86
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: BasicEnemyMovement
+  - hash:
+      serializedVersion: 2
       Hash: f1d735cc1a21c3704ab52568f4fbfcf8
     assemblyName: UnityEngine.TestRunner.dll
     namespaceName: UnityEngine.TestTools.TestRunner
     className: PlaymodeTestsController
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: StartExecute
   - hash:
       serializedVersion: 2
       Hash: aba7b2852ef61d175dd9602e7723d5e5
@@ -350,7 +407,7 @@ ScriptsOnlyBuild:
     className: SignalReceiver
   - hash:
       serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+      Hash: aa42f416f878fc56d4ac9affc48bf6a2
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: EnemyHealth
@@ -434,6 +491,18 @@ ScriptsOnlyBuild:
     className: TimelineAsset
   - hash:
       serializedVersion: 2
+      Hash: 1322df756b4cb865abb1476491dfa00d
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: EnemyLoader
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: DDOL
+  - hash:
+      serializedVersion: 2
       Hash: 760787567e1b60d64a3e421ab83ee14a
     assemblyName: Unity.TextMeshPro.dll
     namespaceName: TMPro
@@ -488,7 +557,7 @@ ScriptsOnlyBuild:
     className: TMP_SpriteAnimator
   - hash:
       serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+      Hash: 40579efc2af58a61843aae6b2fef09f6
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: CameraSnap
@@ -498,6 +567,18 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.TestRunner.dll
     namespaceName: UnityEngine.TestTools.TestRunner.Callbacks
     className: TestResultRendererCallback
+  - hash:
+      serializedVersion: 2
+      Hash: 4a1b7de1f5ca01d3be63349dcdd9eeb7
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: PlayerCurrency
+  - hash:
+      serializedVersion: 2
+      Hash: 2043e4e54268c92680136adcef92eb38
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: DataManager
   - hash:
       serializedVersion: 2
       Hash: 748dd2a2a28da4e618912da5ac45684b
@@ -576,20 +657,8 @@ ScriptsOnlyBuild:
     assemblyName: Unity.TextMeshPro.dll
     namespaceName: TMPro
     className: TextContainer
-  - hash:
-      serializedVersion: 2
-      Hash: f0e70b829910efee99b13bde8f33ecee
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: ShootingSystem
-  - hash:
-      serializedVersion: 2
-      Hash: a104461777379b336527166e36639f36
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: EnemySpawning
   platform: 5
   scenePathNames:
-  - Assets/Scenes/SampleScene.unity
+  - Assets/Scenes/Level 1.unity
   playerPath: C:/Users/vabss/OneDrive/Documents/Personal Projects/ProjectDaedalus/Builds/Project
     Daedalus.exe
