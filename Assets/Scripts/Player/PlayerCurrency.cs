@@ -12,16 +12,22 @@ public class PlayerCurrency : MonoBehaviour
     void Start()
     {
         GameManager = GameObject.FindGameObjectWithTag("Game Manager");
+        GameManager.GetComponent<DataManager>().LoadAllData();
+        currencyCount.text = playerCurrency.ToString();
     }
     void Update()
     {
         if(Input.GetKeyDown(KeyCode.F))
         {
-        GameManager.GetComponent<DataManager>().SaveAllData();
+            GameManager.GetComponent<DataManager>().SaveAllData();
         }
         if(Input.GetKeyDown(KeyCode.R))
         {
-            GameManager.GetComponent<CurrencyManager>().GiveTotalCurrency(playerCurrency);
+            GameManager.GetComponent<DataManager>().LoadAllData();
+        }
+       if(Input.GetKeyDown(KeyCode.L))
+        {
+            GameManager.GetComponent<DataManager>().DeleteAllData();
         }
     }
 

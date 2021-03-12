@@ -1,27 +1,37 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEditor.SceneManagement;
 
 public class DataManager : MonoBehaviour
 {
 private GameObject player;
-private CurrencyManager currencyManager;
+public int globalCurrency;
+
 void Update()
 {
     player = GameObject.FindGameObjectWithTag("Player");
 }
-void Start()
-{
-    currencyManager = GetComponent<CurrencyManager>();
-}
+
 public void SaveAllData()
 {
-    //Save All Player Prefs
-    GetComponent<CurrencyManager>().AddTotalCurrency(player.GetComponent<PlayerCurrency>().playerCurrency);
+    //SAVE ALL PLAYER PREFS
+    globalCurrency = player.GetComponent<PlayerCurrency>().playerCurrency;
+    PlayerPrefs.SetInt("Currency", globalCurrency);
     PlayerPrefs.Save();
+    print("Total Currency: " + PlayerPrefs.GetInt("Currency"));
+}
+
+public void LoadAllData()
+{
+    //LOAD ALL PLAYER PREFS
+    globalCurrency = PlayerPrefs.GetInt("Currency");
+    player.GetComponent<PlayerCurrency>().playerCurrency = globalCurrency;
+    print("Money Load: " + globalCurrency);
 }
 public void DeleteAllData()
 {
+    //DELETE ALL PLAYER PREFS
     PlayerPrefs.DeleteAll();
 }
 }
