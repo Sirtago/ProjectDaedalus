@@ -756,6 +756,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1409903562494016348}
   - component: {fileID: -7924073310901540893}
+  - component: {fileID: -1432401145604929878}
   - component: {fileID: 3320533235889992144}
   - component: {fileID: 7925949679489036651}
   m_Layer: 0
@@ -802,6 +803,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 27ddb79fe09f3fd42b02dd3b9dadbf61, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &-1432401145604929878
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1409903562494016349}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f6156e33fe898c9479d41d3960d57b2a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemyMask:
+    serializedVersion: 2
+    m_Bits: 256
 --- !u!61 &3320533235889992144
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -840,6 +856,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4571241332aefa045a97b2d9d3da1c10, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isSnapped: 0
 --- !u!1 &1409903562516516723
 GameObject:
   m_ObjectHideFlags: 0

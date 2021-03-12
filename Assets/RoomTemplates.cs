@@ -14,6 +14,7 @@ public class RoomTemplates : MonoBehaviour
     public List<GameObject> rooms;
     public float waitTime;
     public GameObject boss;
+    public GameObject shop;
     [HideInInspector]
     public bool SpawnedBoss;
     
@@ -26,8 +27,9 @@ public class RoomTemplates : MonoBehaviour
             {
                 if(i == rooms.Count -1)
                 {
-                    Debug.Log("BOSS SPAWNED");
+                    Debug.Log("BOSS SPAWNED & SHOP SPAWNNED");
                     Instantiate(boss, rooms[i].transform.position, Quaternion.identity);
+                    Instantiate(shop, rooms[i - 2].transform.position, Quaternion.identity);                
                     SpawnedBoss = true;
                 }
             }
