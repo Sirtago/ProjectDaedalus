@@ -6,6 +6,7 @@ public class BasicEnemyMovement : MonoBehaviour
 {
     public LayerMask whatIsPlayer;
     public int speed;
+    public int backSpeed;
     public float radius;
     public float stoppingDistance;
     private GameObject player;
@@ -30,20 +31,19 @@ public class BasicEnemyMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+            GetComponentInChildren<EnemyShooting>().EnemyShoot();
             if(Vector2.Distance(transform.position, player.transform.position) > stoppingDistance)
             {
-            rb.position = Vector3.MoveTowards(transform.position, player.transform.position, speed * Time.deltaTime);
+                rb.position = Vector3.MoveTowards(transform.position, player.transform.position, speed * Time.deltaTime);
             }
             else if(Vector2.Distance(transform.position, player.transform.position) < nearDistance)
             {
-            rb.position = Vector3.MoveTowards(transform.position, player.transform.position, -speed * Time.deltaTime);
+                rb.position = Vector3.MoveTowards(transform.position, player.transform.position, -backSpeed * Time.deltaTime);
             }
             else if(Vector2.Distance(transform.position, player.transform.position) < stoppingDistance && Vector2.Distance(transform.position, player.transform.position) > nearDistance)
             {
                 rb.position = this.transform.position;
-            }
-            //MOVE TOWARDS PLAYER
-            //SHOOT AT PLAYER      
+            }    
     }
 
 }

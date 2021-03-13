@@ -851,9 +851,10 @@ GameObject:
   m_Component:
   - component: {fileID: 1571869989}
   - component: {fileID: 1571869987}
+  - component: {fileID: 1571869991}
+  - component: {fileID: 1571869990}
   - component: {fileID: 1571869986}
   - component: {fileID: 1571869988}
-  - component: {fileID: 1571869990}
   m_Layer: 10
   m_Name: Player
   m_TagString: Player
@@ -943,6 +944,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerCurrency: 0
   currencyCount: {fileID: 123373067}
+--- !u!114 &1571869991
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1571869985}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5c45c16f78cdb0a4cab4a004ea9b380a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 1
 --- !u!1 &1686470448
 GameObject:
   m_ObjectHideFlags: 0

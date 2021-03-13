@@ -8,10 +8,13 @@ ScriptsOnlyBuild:
     - DDOL
     - DataManager
     - Destroyer
+    - EnemyBullet
     - EnemyHealth
     - EnemyLoader
+    - EnemyShooting
     - EnemySpawning
     - PlayerCurrency
+    - PlayerHealth
     - PlayerMovement
     - RoomSpawner
     - RoomTemplates
@@ -116,6 +119,12 @@ ScriptsOnlyBuild:
       Script: {instanceID: 3444}
     - Class: 114
       Script: {instanceID: 3504}
+    - Class: 114
+      Script: {instanceID: 19412}
+    - Class: 114
+      Script: {instanceID: 26158}
+    - Class: 114
+      Script: {instanceID: 28552}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -353,7 +362,7 @@ ScriptsOnlyBuild:
     className: SignalTrack
   - hash:
       serializedVersion: 2
-      Hash: d9765fa4136e5fc24f05ded96a113d86
+      Hash: 9f567c26b5af29b889d7a81fd0473f71
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: BasicEnemyMovement
@@ -657,6 +666,24 @@ ScriptsOnlyBuild:
     assemblyName: Unity.TextMeshPro.dll
     namespaceName: TMPro
     className: TextContainer
+  - hash:
+      serializedVersion: 2
+      Hash: c7a1cfbcd815f35b6700d8538ef4094e
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: PlayerHealth
+  - hash:
+      serializedVersion: 2
+      Hash: 325f190699815d12a98ff85fadefbe6c
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: EnemyShooting
+  - hash:
+      serializedVersion: 2
+      Hash: 50587017eefa4184c8b75cd47b1d9ae3
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: EnemyBullet
   platform: 5
   scenePathNames:
   - Assets/Scenes/Level 1.unity
