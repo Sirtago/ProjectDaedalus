@@ -40,5 +40,9 @@ public class BasicBullet : MonoBehaviour
         {
             Destroy(gameObject);
         }
+        else if(col.gameObject.CompareTag("Wall"))
+        {
+            Destroy(gameObject);
+        }
     }
 }

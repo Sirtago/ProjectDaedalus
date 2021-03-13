@@ -40,5 +40,9 @@ public class EnemyBullet : MonoBehaviour
         {
             Destroy(gameObject);
         }
+        else if(col.gameObject.CompareTag("Wall"))
+        {
+            Destroy(gameObject);
+        }
     }
 }
