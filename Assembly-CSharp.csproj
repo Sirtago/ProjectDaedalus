@@ -57,6 +57,9 @@
      <Compile Include="Assets\Scripts\Enemies\EnemyBullet.cs" />
      <Compile Include="Assets\Scripts\Menu\MainMenu.cs" />
      <Compile Include="Assets\Scripts\Menu\OptionsMenu.cs" />
+     <Compile Include="Assets\Scripts\NPC\ShopkeeperInteract.cs" />
+     <Compile Include="Assets\Scripts\Game Manager\ShopManager.cs" />
+     <Compile Include="Assets\Scripts\Menu\PauseMenu.cs" />
      <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap.shader" />

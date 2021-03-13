@@ -7,27 +7,35 @@ public class DataManager : MonoBehaviour
 {
 private GameObject player;
 public int globalCurrency;
+public float globalFireRate;
+void Update()
 
-void Start()
 {
+    if(player = null)
+    {
     player = GameObject.FindGameObjectWithTag("Player");
+    }
 }
 
 public void SaveAllData()
 {
     //SAVE ALL PLAYER PREFS
     globalCurrency = player.GetComponent<PlayerCurrency>().playerCurrency;
+    globalFireRate = player.GetComponentInChildren<ShootingSystem>().basicFireRate;
     PlayerPrefs.SetInt("Currency", globalCurrency);
+    PlayerPrefs.SetFloat("FireRate", globalFireRate);
     PlayerPrefs.Save();
-    print("Total Currency: " + PlayerPrefs.GetInt("Currency"));
 }
 
 public void LoadAllData()
 {
     //LOAD ALL PLAYER PREFS
     globalCurrency = PlayerPrefs.GetInt("Currency");
+    globalFireRate = PlayerPrefs.GetFloat("FireRate");
     player.GetComponent<PlayerCurrency>().playerCurrency = globalCurrency;
+    player.GetComponentInChildren<ShootingSystem>().basicFireRate = globalFireRate;
     print("Money Load: " + globalCurrency);
+    print("Fire Rate: " + globalFireRate);
 }
 public void DeleteAllData()
 {

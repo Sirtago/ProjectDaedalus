@@ -12,6 +12,7 @@ TagManager:
   - Boss
   - Game Manager
   - Bullet
+  - Shopkeeper
   layers:
   - Default
   - TransparentFX
