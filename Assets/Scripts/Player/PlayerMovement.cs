@@ -7,6 +7,7 @@ public class PlayerMovement : MonoBehaviour
     public float speed;
     private Rigidbody2D rb;
     private Vector2 moveVelocity;
+    public bool canMove = true;
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
@@ -21,6 +22,9 @@ public class PlayerMovement : MonoBehaviour
     //Character Movement Physics
     void FixedUpdate()
     {
+        if(canMove)
+        {
        rb.position = rb.position + moveVelocity * Time.deltaTime;
+        }
     }
 }

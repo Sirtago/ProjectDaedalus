@@ -15,6 +15,11 @@ public class PlayerHealth : MonoBehaviour
     }
     void Die()
     {
-        Destroy(gameObject);
+        //Destroy(gameObject);
+        foreach (Transform child in transform)
+            {
+            child.gameObject.SetActive(false);
+            }
+        gameObject.GetComponent<PlayerMovement>().canMove = false;
     }
 }

@@ -8,7 +8,7 @@ public class ShopkeeperInteract : MonoBehaviour
     bool canInteract;
     void Start()
     {
-        shop = GameObject.FindGameObjectWithTag("Game Manager").GetComponent<ShopManager>();
+        shop = GameObject.Find("UI CANVAS").GetComponent<ShopManager>();
     }
     void Update()
     {

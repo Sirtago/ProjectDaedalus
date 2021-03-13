@@ -15,13 +15,6 @@ public class DDOL : MonoBehaviour
                     Destroy (this.gameObject);
                 }
         }
-        void Update()
-        {
-            if(SceneManager.GetActiveScene() == SceneManager.GetSceneByBuildIndex(0))
-            {
-                Destroy(gameObject);
-            }
-        }
 }
 
 

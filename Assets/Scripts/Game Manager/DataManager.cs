@@ -8,10 +8,15 @@ public class DataManager : MonoBehaviour
 private GameObject player;
 public int globalCurrency;
 public float globalFireRate;
+public bool isMenu;
 void Update()
 
 {
-    if(player = null)
+    if(SceneManager.GetActiveScene() == SceneManager.GetSceneByBuildIndex(0))
+    {
+        isMenu = true;
+    }else{isMenu = false;}
+    if(player == null && !isMenu)
     {
     player = GameObject.FindGameObjectWithTag("Player");
     }

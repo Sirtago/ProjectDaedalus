@@ -12,4 +12,8 @@ public class OptionsMenu : MonoBehaviour
       Main.SetActive(true);
       Options.SetActive(false);     
   }
+  public void SetFullScreen(bool isFullscreen)
+  {
+    Screen.fullScreen = isFullscreen;
+  }
 }
