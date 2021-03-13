@@ -5,10 +5,15 @@ using UnityEngine.SceneManagement;
 
 public class DDOL : MonoBehaviour
 {
-
+    static bool created = false;
         private void Awake()
         {
-            DontDestroyOnLoad(transform.gameObject);
+            if (!created) {
+                    DontDestroyOnLoad (this.gameObject);
+                    created = true;
+                } else {
+                    Destroy (this.gameObject);
+                }
         }
         void Update()
         {
