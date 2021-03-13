@@ -2,6 +2,7 @@ ScriptsOnlyBuild:
   usedScripts:
     Assembly-CSharp.dll:
     - AddRoom
+    - AudioManager
     - BasicBullet
     - BasicEnemyMovement
     - CameraSnap
@@ -24,6 +25,7 @@ ScriptsOnlyBuild:
     - ShootingSystem
     - ShopManager
     - ShopkeeperInteract
+    - UIMapSize
     Unity.Rider.Editor.dll:
     - Packages.Rider.Editor.UnitTesting.CallbackData
     Unity.TextMeshPro.dll:
@@ -70,6 +72,8 @@ ScriptsOnlyBuild:
     - Class: 81
       Script: {instanceID: 0}
     - Class: 84
+      Script: {instanceID: 0}
+    - Class: 96
       Script: {instanceID: 0}
     - Class: 104
       Script: {instanceID: 0}
@@ -129,6 +133,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 3520}
     - Class: 114
       Script: {instanceID: 3604}
+    - Class: 114
+      Script: {instanceID: 29714}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -163,6 +169,8 @@ ScriptsOnlyBuild:
     - Class: 49
       Script: {instanceID: 0}
     - Class: 81
+      Script: {instanceID: 0}
+    - Class: 83
       Script: {instanceID: 0}
     - Class: 89
       Script: {instanceID: 0}
@@ -202,6 +210,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 3460}
     - Class: 114
       Script: {instanceID: 3604}
+    - Class: 114
+      Script: {instanceID: 17186}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -789,6 +799,18 @@ ScriptsOnlyBuild:
     assemblyName: Unity.TextMeshPro.dll
     namespaceName: TMPro
     className: TextContainer
+  - hash:
+      serializedVersion: 2
+      Hash: 3be2fdb7eea36a4be6eba1438ad2e1ca
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: AudioManager
+  - hash:
+      serializedVersion: 2
+      Hash: feeb40ef410790d2b0c85688efbcc959
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: UIMapSize
   platform: 19
   scenePathNames:
   - Assets/Scenes/Main Menu.unity

@@ -6,7 +6,10 @@ public class OptionsMenu : MonoBehaviour
 {
     public GameObject Options;
     public GameObject Main;
-    // Start is called before the first frame update
+    void Start()
+    {
+      Screen.fullScreen = false;
+    }
   public void Back()
   {
       Main.SetActive(true);

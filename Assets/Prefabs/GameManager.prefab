@@ -10,8 +10,8 @@ GameObject:
   m_Component:
   - component: {fileID: 6639466772519549684}
   - component: {fileID: 6639466772519549686}
-  - component: {fileID: 6388724212656652251}
   - component: {fileID: 992159170976792832}
+  - component: {fileID: 5935805333299851167}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Game Manager
@@ -46,20 +46,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   globalCurrency: 0
---- !u!114 &6388724212656652251
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6639466772519549685}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3192dd844d35c7042b115de2338b7c0e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  shopkeeper: {fileID: 0}
-  shopMenu: {fileID: 0}
+  globalFireRate: 0
+  isMenu: 0
 --- !u!114 &992159170976792832
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -72,3 +60,28 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6552062ea1ec72d4b8ba25adac201e51, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &5935805333299851167
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6639466772519549685}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7c184b8169a996f4b93cd231f13b0bbd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sounds:
+  - name: PlayerDeath
+    clip: {fileID: 0}
+    volume: 0.5
+    pitch: 1
+    source: {fileID: 0}
+    loop: 0
+  - name: GunShot
+    clip: {fileID: 8300000, guid: 4f45784bbe855f44f9913629c8b46559, type: 3}
+    volume: 0.5
+    pitch: 1
+    source: {fileID: 0}
+    loop: 0

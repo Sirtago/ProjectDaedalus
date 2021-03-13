@@ -39,6 +39,7 @@ public float basicFireRate;
     {
         if(canShootBasic)
         {
+        FindObjectOfType<AudioManager>().Play("GunShot");
         Instantiate(bullet, shootPos.transform.position, transform.rotation);
         timeTillNextShot = basicFireRate;
         }
