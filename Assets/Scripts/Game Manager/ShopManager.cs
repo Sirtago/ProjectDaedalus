@@ -10,7 +10,6 @@ public class ShopManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        shopkeeper = GameObject.FindGameObjectWithTag("Shopkeeper");
         player = GameObject.FindGameObjectWithTag("Player");
     }
 
@@ -20,15 +19,6 @@ public class ShopManager : MonoBehaviour
         if(shopkeeper == null)
         {
             shopkeeper = GameObject.FindGameObjectWithTag("Shopkeeper");
-        }
-        if(shopkeeper != null)
-        {
-            if(shopkeeper.GetComponent<ShopkeeperInteract>().canInteract && Input.GetKeyDown(KeyCode.E))
-            {
-                //Open Shop Menu
-                shopMenu.SetActive(true);
-                Debug.Log("Windows Open");
-            }
         }
     }
     public void BuyFireRate(int price)
@@ -58,5 +48,13 @@ public class ShopManager : MonoBehaviour
     public void Back()
     {
         shopMenu.SetActive(false);
+    }
+    public void OpenShop()
+    {
+
+                //Open Shop Menu
+                shopMenu.SetActive(true);
+                Debug.Log("Windows Open");
+    
     }
 }
