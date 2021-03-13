@@ -70,6 +70,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 84
       Script: {instanceID: 0}
+    - Class: 89
+      Script: {instanceID: 0}
     - Class: 104
       Script: {instanceID: 0}
     - Class: 114
@@ -77,61 +79,61 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 1532}
     - Class: 114
-      Script: {instanceID: 1842}
+      Script: {instanceID: 1844}
     - Class: 114
-      Script: {instanceID: 1880}
+      Script: {instanceID: 1882}
     - Class: 114
-      Script: {instanceID: 1954}
+      Script: {instanceID: 1956}
     - Class: 114
-      Script: {instanceID: 2148}
+      Script: {instanceID: 2150}
     - Class: 114
-      Script: {instanceID: 2156}
+      Script: {instanceID: 2158}
     - Class: 114
-      Script: {instanceID: 2310}
+      Script: {instanceID: 2312}
     - Class: 114
-      Script: {instanceID: 2410}
+      Script: {instanceID: 2412}
     - Class: 114
-      Script: {instanceID: 2582}
+      Script: {instanceID: 2426}
     - Class: 114
-      Script: {instanceID: 2680}
+      Script: {instanceID: 2488}
     - Class: 114
-      Script: {instanceID: 2696}
+      Script: {instanceID: 2588}
     - Class: 114
-      Script: {instanceID: 2792}
+      Script: {instanceID: 2686}
     - Class: 114
-      Script: {instanceID: 2866}
+      Script: {instanceID: 2702}
     - Class: 114
-      Script: {instanceID: 2896}
+      Script: {instanceID: 2798}
     - Class: 114
-      Script: {instanceID: 2908}
+      Script: {instanceID: 2872}
     - Class: 114
-      Script: {instanceID: 2928}
+      Script: {instanceID: 2902}
     - Class: 114
-      Script: {instanceID: 3110}
+      Script: {instanceID: 2914}
     - Class: 114
-      Script: {instanceID: 3236}
+      Script: {instanceID: 2936}
     - Class: 114
-      Script: {instanceID: 3266}
+      Script: {instanceID: 3024}
     - Class: 114
-      Script: {instanceID: 3418}
+      Script: {instanceID: 3120}
     - Class: 114
-      Script: {instanceID: 3444}
+      Script: {instanceID: 3166}
     - Class: 114
-      Script: {instanceID: 3504}
+      Script: {instanceID: 3182}
     - Class: 114
-      Script: {instanceID: 3588}
+      Script: {instanceID: 3250}
     - Class: 114
-      Script: {instanceID: 19412}
+      Script: {instanceID: 3280}
     - Class: 114
-      Script: {instanceID: 26158}
+      Script: {instanceID: 3304}
     - Class: 114
-      Script: {instanceID: 28552}
+      Script: {instanceID: 3434}
     - Class: 114
-      Script: {instanceID: 42470}
+      Script: {instanceID: 3460}
     - Class: 114
-      Script: {instanceID: 42662}
+      Script: {instanceID: 3520}
     - Class: 114
-      Script: {instanceID: 54306}
+      Script: {instanceID: 3604}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -167,8 +169,6 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 81
       Script: {instanceID: 0}
-    - Class: 89
-      Script: {instanceID: 0}
     - Class: 104
       Script: {instanceID: 0}
     - Class: 108
@@ -176,29 +176,29 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 1512}
     - Class: 114
-      Script: {instanceID: 1842}
+      Script: {instanceID: 1684}
     - Class: 114
-      Script: {instanceID: 2232}
+      Script: {instanceID: 1844}
     - Class: 114
-      Script: {instanceID: 2680}
+      Script: {instanceID: 2234}
     - Class: 114
-      Script: {instanceID: 2726}
+      Script: {instanceID: 2686}
     - Class: 114
-      Script: {instanceID: 2866}
+      Script: {instanceID: 2732}
+    - Class: 114
+      Script: {instanceID: 2872}
     - Class: 114
       Script: {instanceID: 2928}
     - Class: 114
-      Script: {instanceID: 3086}
+      Script: {instanceID: 2936}
     - Class: 114
-      Script: {instanceID: 3110}
+      Script: {instanceID: 3096}
     - Class: 114
-      Script: {instanceID: 3444}
+      Script: {instanceID: 3120}
     - Class: 114
-      Script: {instanceID: 3588}
+      Script: {instanceID: 3460}
     - Class: 114
-      Script: {instanceID: 32612}
-    - Class: 114
-      Script: {instanceID: 35334}
+      Script: {instanceID: 3604}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -276,6 +276,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
     className: PlayableTrack
+  - hash:
+      serializedVersion: 2
+      Hash: 5cd9ca82199bdb72072289ef833725a2
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: OptionsMenu
   - hash:
       serializedVersion: 2
       Hash: 6bc76e17f0d5e93f3eea7f5a2fe227f3
@@ -464,6 +470,18 @@ ScriptsOnlyBuild:
     className: RawImage
   - hash:
       serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: ShopkeeperInteract
+  - hash:
+      serializedVersion: 2
+      Hash: 325f190699815d12a98ff85fadefbe6c
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: EnemyShooting
+  - hash:
+      serializedVersion: 2
       Hash: c3d3430df9e3ea95e3e3d587961390fb
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
@@ -584,6 +602,12 @@ ScriptsOnlyBuild:
     className: DDOL
   - hash:
       serializedVersion: 2
+      Hash: d19b010d4470eff0cc65f3868cb5e781
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: MainMenu
+  - hash:
+      serializedVersion: 2
       Hash: 760787567e1b60d64a3e421ab83ee14a
     assemblyName: Unity.TextMeshPro.dll
     namespaceName: TMPro
@@ -594,6 +618,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.TextMeshPro.dll
     namespaceName: TMPro
     className: TMP_SubMeshUI
+  - hash:
+      serializedVersion: 2
+      Hash: 930b2a7c015542327cee6af349728cdd
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: PauseMenu
   - hash:
       serializedVersion: 2
       Hash: 5cc439bf63c0539d39588e69465ac2ab
@@ -620,10 +650,22 @@ ScriptsOnlyBuild:
     className: TMP_ScrollbarEventHandler
   - hash:
       serializedVersion: 2
+      Hash: 8a5bd6522dba0564737ca92803700638
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: ShopManager
+  - hash:
+      serializedVersion: 2
       Hash: f40fedccd4adbc76605bea6d67537e4b
     assemblyName: Unity.TextMeshPro.dll
     namespaceName: TMPro
     className: TMP_SelectionCaret
+  - hash:
+      serializedVersion: 2
+      Hash: 50587017eefa4184c8b75cd47b1d9ae3
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: EnemyBullet
   - hash:
       serializedVersion: 2
       Hash: a306e12d896ddcca949923c805691027
@@ -654,6 +696,12 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: PlayerCurrency
+  - hash:
+      serializedVersion: 2
+      Hash: c7a1cfbcd815f35b6700d8538ef4094e
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: PlayerHealth
   - hash:
       serializedVersion: 2
       Hash: 9aa1dfc4ce45deb677aa6d2e700f54ae
@@ -738,57 +786,9 @@ ScriptsOnlyBuild:
     assemblyName: Unity.TextMeshPro.dll
     namespaceName: TMPro
     className: TextContainer
-  - hash:
-      serializedVersion: 2
-      Hash: c7a1cfbcd815f35b6700d8538ef4094e
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: PlayerHealth
-  - hash:
-      serializedVersion: 2
-      Hash: 325f190699815d12a98ff85fadefbe6c
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: EnemyShooting
-  - hash:
-      serializedVersion: 2
-      Hash: 50587017eefa4184c8b75cd47b1d9ae3
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: EnemyBullet
-  - hash:
-      serializedVersion: 2
-      Hash: d19b010d4470eff0cc65f3868cb5e781
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: MainMenu
-  - hash:
-      serializedVersion: 2
-      Hash: 5cd9ca82199bdb72072289ef833725a2
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: OptionsMenu
-  - hash:
-      serializedVersion: 2
-      Hash: fcb6878b74ae695d119ce62947d7f777
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: ShopkeeperInteract
-  - hash:
-      serializedVersion: 2
-      Hash: 8a5bd6522dba0564737ca92803700638
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: ShopManager
-  - hash:
-      serializedVersion: 2
-      Hash: 930b2a7c015542327cee6af349728cdd
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: PauseMenu
   platform: 5
   scenePathNames:
   - Assets/Scenes/Main Menu.unity
   - Assets/Scenes/Level 1.unity
-  playerPath: C:/Users/vabss/OneDrive/Documents/Personal Projects/ProjectDaedalus/Builds/Project
-    Daedalus.exe
+  playerPath: C:/Users/vabss/OneDrive/Documents/Personal Projects/ProjectDaedalus/Builds/Windows
+    Build/Project Daedalus.exe
