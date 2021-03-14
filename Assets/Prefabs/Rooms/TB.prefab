@@ -731,6 +731,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 27ddb79fe09f3fd42b02dd3b9dadbf61, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  doorCounter: 2
 --- !u!114 &-2214745824686393355
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -743,6 +744,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f6156e33fe898c9479d41d3960d57b2a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  enemyGameObject: []
   enemyMask:
     serializedVersion: 2
     m_Bits: 256

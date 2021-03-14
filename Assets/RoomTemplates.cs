@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using UnityEngine.SceneManagement;
 using UnityEngine;
 
 public class RoomTemplates : MonoBehaviour
@@ -11,25 +12,28 @@ public class RoomTemplates : MonoBehaviour
 
     public GameObject closedRooms;
 
-    public List<GameObject> rooms;
+    public List<GameObject> specialRooms;
     public float waitTime;
     public GameObject boss;
     public GameObject shop;
     [HideInInspector]
     public bool SpawnedBoss;
-    
 
     void Update()
     {
         if(waitTime <= 0 && SpawnedBoss == false)
         {
-            for (int i = 0; i < rooms.Count; i++)
+     if(specialRooms.Count < 2)
+        {
+            Scene scene = SceneManager.GetActiveScene();
+            SceneManager.LoadScene(scene.name);
+        }
+            for (int i = 0; i < specialRooms.Count; i++)
             {
-                if(i == rooms.Count -1)
+                if(i == specialRooms.Count -1)
                 {
-                    Debug.Log("BOSS SPAWNED & SHOP SPAWNNED");
-                    Instantiate(boss, rooms[i].transform.position, Quaternion.identity);
-                    Instantiate(shop, rooms[i - 2].transform.position, Quaternion.identity);                
+                    Instantiate(boss, specialRooms[i].transform.position, Quaternion.identity);
+                    Instantiate(shop, specialRooms[i - 1].transform.position, Quaternion.identity);    
                     SpawnedBoss = true;
                 }
             }
@@ -38,5 +42,4 @@ public class RoomTemplates : MonoBehaviour
             waitTime -= Time.deltaTime;
         }
     }
-
 }

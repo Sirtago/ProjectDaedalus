@@ -92,49 +92,49 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 2158}
     - Class: 114
-      Script: {instanceID: 2312}
+      Script: {instanceID: 2314}
     - Class: 114
-      Script: {instanceID: 2412}
+      Script: {instanceID: 2414}
     - Class: 114
-      Script: {instanceID: 2426}
+      Script: {instanceID: 2428}
     - Class: 114
-      Script: {instanceID: 2488}
+      Script: {instanceID: 2490}
     - Class: 114
-      Script: {instanceID: 2588}
+      Script: {instanceID: 2590}
     - Class: 114
-      Script: {instanceID: 2686}
+      Script: {instanceID: 2688}
     - Class: 114
-      Script: {instanceID: 2702}
+      Script: {instanceID: 2704}
     - Class: 114
-      Script: {instanceID: 2798}
+      Script: {instanceID: 2800}
     - Class: 114
-      Script: {instanceID: 2872}
+      Script: {instanceID: 2874}
     - Class: 114
-      Script: {instanceID: 2902}
+      Script: {instanceID: 2904}
     - Class: 114
-      Script: {instanceID: 2936}
+      Script: {instanceID: 2938}
     - Class: 114
-      Script: {instanceID: 3024}
+      Script: {instanceID: 3026}
     - Class: 114
-      Script: {instanceID: 3120}
+      Script: {instanceID: 3122}
     - Class: 114
-      Script: {instanceID: 3166}
+      Script: {instanceID: 3168}
     - Class: 114
-      Script: {instanceID: 3182}
+      Script: {instanceID: 3184}
     - Class: 114
-      Script: {instanceID: 3250}
+      Script: {instanceID: 3252}
     - Class: 114
-      Script: {instanceID: 3280}
+      Script: {instanceID: 3282}
     - Class: 114
-      Script: {instanceID: 3304}
+      Script: {instanceID: 3306}
     - Class: 114
-      Script: {instanceID: 3460}
+      Script: {instanceID: 3464}
     - Class: 114
-      Script: {instanceID: 3520}
+      Script: {instanceID: 3524}
     - Class: 114
-      Script: {instanceID: 3604}
+      Script: {instanceID: 3608}
     - Class: 114
-      Script: {instanceID: 29714}
+      Script: {instanceID: 3664}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -189,29 +189,29 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 2234}
     - Class: 114
-      Script: {instanceID: 2686}
+      Script: {instanceID: 2688}
     - Class: 114
-      Script: {instanceID: 2732}
+      Script: {instanceID: 2734}
     - Class: 114
-      Script: {instanceID: 2872}
+      Script: {instanceID: 2874}
     - Class: 114
-      Script: {instanceID: 2914}
+      Script: {instanceID: 2916}
     - Class: 114
-      Script: {instanceID: 2928}
+      Script: {instanceID: 2930}
     - Class: 114
-      Script: {instanceID: 2936}
+      Script: {instanceID: 2938}
     - Class: 114
-      Script: {instanceID: 3096}
+      Script: {instanceID: 3098}
     - Class: 114
-      Script: {instanceID: 3120}
+      Script: {instanceID: 3122}
     - Class: 114
-      Script: {instanceID: 3434}
+      Script: {instanceID: 3436}
     - Class: 114
-      Script: {instanceID: 3460}
+      Script: {instanceID: 3446}
     - Class: 114
-      Script: {instanceID: 3604}
+      Script: {instanceID: 3464}
     - Class: 114
-      Script: {instanceID: 17186}
+      Script: {instanceID: 3608}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -243,7 +243,7 @@ ScriptsOnlyBuild:
     className: Image
   - hash:
       serializedVersion: 2
-      Hash: 21d5a1e388fa16fd639df3463c88d1f4
+      Hash: 38492e51c2e733f9fdd3d5e4522803c1
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: RoomTemplates
@@ -381,7 +381,7 @@ ScriptsOnlyBuild:
     className: PositionAsUV1
   - hash:
       serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+      Hash: bb1176185f1d2f9f6e105358d9204932
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: AddRoom
@@ -723,6 +723,12 @@ ScriptsOnlyBuild:
     className: DataManager
   - hash:
       serializedVersion: 2
+      Hash: 3be2fdb7eea36a4be6eba1438ad2e1ca
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: AudioManager
+  - hash:
+      serializedVersion: 2
       Hash: 748dd2a2a28da4e618912da5ac45684b
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.EventSystems
@@ -795,22 +801,22 @@ ScriptsOnlyBuild:
     className: TouchInputModule
   - hash:
       serializedVersion: 2
+      Hash: feeb40ef410790d2b0c85688efbcc959
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: UIMapSize
+  - hash:
+      serializedVersion: 2
       Hash: 4fd8bf02e3089425d3502e26c44ba31a
     assemblyName: Unity.TextMeshPro.dll
     namespaceName: TMPro
     className: TextContainer
   - hash:
       serializedVersion: 2
-      Hash: 3be2fdb7eea36a4be6eba1438ad2e1ca
+      Hash: b0ddf7262c34c2f8eecd4356e4fef1ee
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
-    className: AudioManager
-  - hash:
-      serializedVersion: 2
-      Hash: feeb40ef410790d2b0c85688efbcc959
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: UIMapSize
+    className: DoorCounter
   platform: 19
   scenePathNames:
   - Assets/Scenes/Main Menu.unity

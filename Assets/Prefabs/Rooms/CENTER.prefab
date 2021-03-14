@@ -657,6 +657,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 27ddb79fe09f3fd42b02dd3b9dadbf61, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  doorCounter: 4
 --- !u!61 &8609927960414751038
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -721,6 +722,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4571241332aefa045a97b2d9d3da1c10, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isSnapped: 0
 --- !u!1 &4236963563810093912
 GameObject:
   m_ObjectHideFlags: 0

@@ -23,7 +23,7 @@ public class UIMapSize : MonoBehaviour
         }
         if(fullscreen)
         {
-            cam.orthographicSize = 16f;
+            cam.orthographicSize = 20f;
             transform.position = map.position;
             transform.localScale = map.localScale;
         }else
