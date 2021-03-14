@@ -31,7 +31,7 @@ public class BasicEnemyMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-            GetComponentInChildren<EnemyShooting>().EnemyShoot();
+            //GetComponentInChildren<EnemyShooting>().EnemyShoot();
             if(Vector2.Distance(transform.position, player.transform.position) > stoppingDistance)
             {
                 rb.position = Vector3.MoveTowards(transform.position, player.transform.position, speed * Time.deltaTime);

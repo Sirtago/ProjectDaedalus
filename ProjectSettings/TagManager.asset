@@ -13,6 +13,7 @@ TagManager:
   - Game Manager
   - Bullet
   - Shopkeeper
+  - EnemyBullet
   layers:
   - Default
   - TransparentFX

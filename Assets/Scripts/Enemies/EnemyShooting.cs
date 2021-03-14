@@ -19,11 +19,11 @@ public class EnemyShooting : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+    EnemyShoot();
     Vector3 dir = target.transform.position - transform.position; 
     float angle = Mathf.Atan2(dir.y,dir.x) * Mathf.Rad2Deg; 
     transform.rotation = Quaternion.AngleAxis(angle, Vector3.forward);
      timeBTWShots -= 1 * Time.deltaTime;
-    // transform.rotation = Quaternion.Euler(0, 0, angle);
     }
     public void EnemyShoot()
     {

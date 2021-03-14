@@ -13,6 +13,7 @@ ScriptsOnlyBuild:
     - EnemyHealth
     - EnemyLoader
     - EnemyShooting
+    - EnemyShotgunWeapon
     - EnemySpawning
     - MainMenu
     - OptionsMenu
@@ -82,59 +83,61 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 1532}
     - Class: 114
-      Script: {instanceID: 1844}
+      Script: {instanceID: 1846}
     - Class: 114
-      Script: {instanceID: 1882}
+      Script: {instanceID: 1884}
     - Class: 114
-      Script: {instanceID: 1956}
+      Script: {instanceID: 1958}
     - Class: 114
-      Script: {instanceID: 2150}
+      Script: {instanceID: 2152}
     - Class: 114
-      Script: {instanceID: 2158}
+      Script: {instanceID: 2160}
     - Class: 114
-      Script: {instanceID: 2314}
+      Script: {instanceID: 2316}
     - Class: 114
-      Script: {instanceID: 2414}
+      Script: {instanceID: 2416}
     - Class: 114
-      Script: {instanceID: 2428}
+      Script: {instanceID: 2430}
     - Class: 114
-      Script: {instanceID: 2490}
+      Script: {instanceID: 2492}
     - Class: 114
-      Script: {instanceID: 2590}
+      Script: {instanceID: 2592}
     - Class: 114
-      Script: {instanceID: 2688}
+      Script: {instanceID: 2690}
     - Class: 114
-      Script: {instanceID: 2704}
+      Script: {instanceID: 2706}
     - Class: 114
-      Script: {instanceID: 2800}
+      Script: {instanceID: 2802}
     - Class: 114
-      Script: {instanceID: 2874}
+      Script: {instanceID: 2876}
     - Class: 114
-      Script: {instanceID: 2904}
+      Script: {instanceID: 2906}
     - Class: 114
-      Script: {instanceID: 2938}
+      Script: {instanceID: 2940}
     - Class: 114
-      Script: {instanceID: 3026}
+      Script: {instanceID: 3028}
     - Class: 114
-      Script: {instanceID: 3122}
+      Script: {instanceID: 3124}
     - Class: 114
-      Script: {instanceID: 3168}
+      Script: {instanceID: 3170}
     - Class: 114
-      Script: {instanceID: 3184}
+      Script: {instanceID: 3186}
     - Class: 114
-      Script: {instanceID: 3252}
+      Script: {instanceID: 3254}
     - Class: 114
-      Script: {instanceID: 3282}
+      Script: {instanceID: 3284}
     - Class: 114
-      Script: {instanceID: 3306}
+      Script: {instanceID: 3308}
     - Class: 114
-      Script: {instanceID: 3464}
+      Script: {instanceID: 3466}
     - Class: 114
-      Script: {instanceID: 3524}
+      Script: {instanceID: 3526}
     - Class: 114
-      Script: {instanceID: 3608}
+      Script: {instanceID: 3610}
     - Class: 114
-      Script: {instanceID: 3664}
+      Script: {instanceID: 3666}
+    - Class: 114
+      Script: {instanceID: 17028}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -181,37 +184,37 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 1512}
     - Class: 114
-      Script: {instanceID: 1650}
+      Script: {instanceID: 1652}
     - Class: 114
-      Script: {instanceID: 1684}
+      Script: {instanceID: 1686}
     - Class: 114
-      Script: {instanceID: 1844}
+      Script: {instanceID: 1846}
     - Class: 114
-      Script: {instanceID: 2234}
+      Script: {instanceID: 2236}
     - Class: 114
-      Script: {instanceID: 2688}
+      Script: {instanceID: 2690}
     - Class: 114
-      Script: {instanceID: 2734}
+      Script: {instanceID: 2736}
     - Class: 114
-      Script: {instanceID: 2874}
+      Script: {instanceID: 2876}
     - Class: 114
-      Script: {instanceID: 2916}
+      Script: {instanceID: 2918}
     - Class: 114
-      Script: {instanceID: 2930}
+      Script: {instanceID: 2932}
     - Class: 114
-      Script: {instanceID: 2938}
+      Script: {instanceID: 2940}
     - Class: 114
-      Script: {instanceID: 3098}
+      Script: {instanceID: 3100}
     - Class: 114
-      Script: {instanceID: 3122}
+      Script: {instanceID: 3124}
     - Class: 114
-      Script: {instanceID: 3436}
+      Script: {instanceID: 3438}
     - Class: 114
-      Script: {instanceID: 3446}
+      Script: {instanceID: 3448}
     - Class: 114
-      Script: {instanceID: 3464}
+      Script: {instanceID: 3466}
     - Class: 114
-      Script: {instanceID: 3608}
+      Script: {instanceID: 3610}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -259,6 +262,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.TextMeshPro.dll
     namespaceName: TMPro
     className: TMP_InputField
+  - hash:
+      serializedVersion: 2
+      Hash: b0ddf7262c34c2f8eecd4356e4fef1ee
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: DoorCounter
   - hash:
       serializedVersion: 2
       Hash: caa533b001ae39b864ba8425019e2268
@@ -813,10 +822,10 @@ ScriptsOnlyBuild:
     className: TextContainer
   - hash:
       serializedVersion: 2
-      Hash: b0ddf7262c34c2f8eecd4356e4fef1ee
+      Hash: 7629533d085f85a44f0e01748e051e30
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
-    className: DoorCounter
+    className: EnemyShotgunWeapon
   platform: 19
   scenePathNames:
   - Assets/Scenes/Main Menu.unity

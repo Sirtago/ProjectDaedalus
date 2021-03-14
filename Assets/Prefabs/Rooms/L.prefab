@@ -45,6 +45,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enemies:
   - {fileID: 1222697338951694813, guid: 50d4e6b250bda3f4e8149cd4bfbec78f, type: 3}
+  - {fileID: 1946704002141899568, guid: efc671b601ce18848833781bf0eb7f2e, type: 3}
 --- !u!1 &1617780236621182653
 GameObject:
   m_ObjectHideFlags: 0
@@ -90,6 +91,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enemies:
   - {fileID: 1222697338951694813, guid: 50d4e6b250bda3f4e8149cd4bfbec78f, type: 3}
+  - {fileID: 1946704002141899568, guid: efc671b601ce18848833781bf0eb7f2e, type: 3}
 --- !u!1 &4606082005359175766
 GameObject:
   m_ObjectHideFlags: 0
@@ -135,6 +137,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enemies:
   - {fileID: 1222697338951694813, guid: 50d4e6b250bda3f4e8149cd4bfbec78f, type: 3}
+  - {fileID: 1946704002141899568, guid: efc671b601ce18848833781bf0eb7f2e, type: 3}
 --- !u!1 &4962012588081256576
 GameObject:
   m_ObjectHideFlags: 0
