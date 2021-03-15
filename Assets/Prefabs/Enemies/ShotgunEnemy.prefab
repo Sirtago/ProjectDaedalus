@@ -309,8 +309,8 @@ MonoBehaviour:
   speed: 2
   backSpeed: 4
   radius: 1.5
-  stoppingDistance: 1.75
-  nearDistance: 1
+  stoppingDistance: 2.5
+  nearDistance: 1.5
 --- !u!50 &3447119182801988826
 Rigidbody2D:
   serializedVersion: 4

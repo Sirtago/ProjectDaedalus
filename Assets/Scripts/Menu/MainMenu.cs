@@ -9,8 +9,17 @@ public class MainMenu : MonoBehaviour
     public GameObject OptionsM;
     public void StartGame()
     {
-        SceneManager.LoadScene("Level 1");
         Time.timeScale =1;
+        StartCoroutine(LoadAsync());
+    }
+    IEnumerator LoadAsync()
+    {
+        AsyncOperation operation = SceneManager.LoadSceneAsync(1);
+        while(!operation.isDone)
+        {
+            Debug.Log(operation.progress);
+            yield return null;
+        }
     }
     public void Options()
     {

@@ -13,6 +13,8 @@ public class RoomTemplates : MonoBehaviour
     public GameObject closedRooms;
 
     public List<GameObject> specialRooms;
+    public List<GameObject> roomCount;
+    public float requiredRooms;
     public float waitTime;
     public GameObject boss;
     public GameObject shop;
@@ -23,20 +25,20 @@ public class RoomTemplates : MonoBehaviour
     {
         if(waitTime <= 0 && SpawnedBoss == false)
         {
-     if(specialRooms.Count < 2)
-        {
-            Scene scene = SceneManager.GetActiveScene();
-            SceneManager.LoadScene(scene.name);
-        }
-            for (int i = 0; i < specialRooms.Count; i++)
+             if(specialRooms.Count < 2 || roomCount.Count - 1 < requiredRooms)
             {
-                if(i == specialRooms.Count -1)
-                {
-                    Instantiate(boss, specialRooms[i].transform.position, Quaternion.identity);
-                    Instantiate(shop, specialRooms[i - 1].transform.position, Quaternion.identity);    
-                    SpawnedBoss = true;
-                }
+                Scene scene = SceneManager.GetActiveScene();
+                SceneManager.LoadScene(scene.name);
             }
+                for (int i = 0; i < specialRooms.Count; i++)
+                {
+                    if(i == specialRooms.Count -1)
+                    {
+                        Instantiate(boss, specialRooms[i].transform.position, Quaternion.identity);
+                        Instantiate(shop, specialRooms[i - 1].transform.position, Quaternion.identity);    
+                        SpawnedBoss = true;
+                    }
+                }
         }else
         {
             waitTime -= Time.deltaTime;
