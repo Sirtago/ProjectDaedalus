@@ -48,6 +48,10 @@ public class ExplodingBullet : MonoBehaviour
         }
         else if(col.gameObject.CompareTag("Wall"))
         {
+            foreach(Transform shotpoint in shotPoints)
+            {
+                Instantiate(normalBullet, shotpoint.position, shotpoint.rotation);
+            }
             Destroy(gameObject);
         }
     }
