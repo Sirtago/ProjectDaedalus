@@ -47,7 +47,8 @@
      <Compile Include="Assets\Scripts\Audio\Sound.cs" />
      <Compile Include="Assets\Scripts\Enemies\BasicEnemyMovement.cs" />
      <Compile Include="Assets\Scripts\Game Manager\StartExecute.cs" />
-     <Compile Include="Assets\Scripts\NPC\ShopkeeperInteract.cs" />
+     <Compile Include="Assets\Scripts\NPC\Shop\ShopkeeperInteract.cs" />
+     <Compile Include="Assets\Scripts\Enemies\Exploding Enemy\ExplodingBullet.cs" />
      <Compile Include="Assets\Scripts\Enemies\Basic Enemy\EnemyShooting.cs" />
      <Compile Include="Assets\Scripts\Enemies\EnemyHealth.cs" />
      <Compile Include="Assets\Scripts\Player\BasicBullet.cs" />
@@ -56,7 +57,7 @@
      <Compile Include="Assets\Scripts\Game Manager\DDOL.cs" />
      <Compile Include="Assets\Scripts\Menu\MainMenu.cs" />
      <Compile Include="Assets\Scripts\Menu\PauseMenu.cs" />
-     <Compile Include="Assets\Scripts\Game Manager\ShopManager.cs" />
+     <Compile Include="Assets\Scripts\NPC\Shop\ShopManager.cs" />
      <Compile Include="Assets\Scripts\Enemies\Basic Enemy\EnemyBullet.cs" />
      <Compile Include="Assets\Scripts\Camera\CameraSnap.cs" />
      <Compile Include="Assets\Scripts\Player\PlayerCurrency.cs" />
@@ -66,7 +67,6 @@
      <Compile Include="Assets\Scripts\Menu\Loading.cs" />
      <Compile Include="Assets\Destroyer.cs" />
      <Compile Include="Assets\Scripts\UI\UIMapSize.cs" />
-     <Compile Include="Assets\Scripts\Enemies\Exploding Enemy\ExplodingBullet.cs" />
      <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap.shader" />
