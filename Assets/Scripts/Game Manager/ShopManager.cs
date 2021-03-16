@@ -29,7 +29,7 @@ public class ShopManager : MonoBehaviour
         if(player.GetComponent<PlayerCurrency>().playerCurrency >= price)
         {
             player.GetComponent<PlayerCurrency>().LoseCurrency(price);
-            player.GetComponent<ShootingSystem>().basicFireRate = player.GetComponent<ShootingSystem>().basicFireRate - 0.25f;
+            player.GetComponent<ShootingSystem>().basicFireRate = player.GetComponentInChildren<ShootingSystem>().basicFireRate - 0.25f;
         }
         //Up Firerate
     }

@@ -230,7 +230,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemyHealth: 2
-  value: 1
+  value: 2
 --- !u!114 &5673675180491983671
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -503,6 +503,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 385f295ad0064314f8daf491419c73a4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fireRate: 1
+  fireRate: 1.5
   enemyBullet: {fileID: 5947620208119236694, guid: f2408d2708335a7438d3617b2867e56a, type: 3}
   shotPos: {fileID: 5957003086230415238}

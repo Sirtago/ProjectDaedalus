@@ -290,7 +290,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemyHealth: 2
-  value: 1
+  value: 2
 --- !u!114 &8769637688542104889
 MonoBehaviour:
   m_ObjectHideFlags: 0
