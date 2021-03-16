@@ -11,7 +11,8 @@ public Transform shootPos;
 //Shooting 
 public GameObject bullet;
 
-bool canShootBasic;
+[HideInInspector]
+public bool canShootBasic;
 private float timeTillNextShot = 0;
 public float basicFireRate;
     void Update () {

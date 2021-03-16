@@ -21,6 +21,7 @@ public class PauseMenu : MonoBehaviour
             pauseMenu.SetActive(true);
             isPaused = true;
             Time.timeScale = 0;
+            FindObjectOfType<ShootingSystem>().canShootBasic = false;
             Debug.Log("PAUSED");
         }
     }
@@ -28,6 +29,7 @@ public class PauseMenu : MonoBehaviour
     {
         pauseMenu.SetActive(false);
         isPaused = false;
+        FindObjectOfType<ShootingSystem>().canShootBasic = true;
         Time.timeScale = 1;
 
     }

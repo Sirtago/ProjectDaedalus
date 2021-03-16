@@ -173,6 +173,7 @@ MonoBehaviour:
   cam: {fileID: 963194227}
   shootPos: {fileID: 373972969}
   bullet: {fileID: 509332282181061837, guid: 7e847fb49b2fc4e40bd6bccc40bf4461, type: 3}
+  canShootBasic: 0
   basicFireRate: 0.5
 --- !u!50 &613187
 Rigidbody2D:

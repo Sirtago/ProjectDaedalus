@@ -8,7 +8,7 @@ public class OptionsMenu : MonoBehaviour
     public GameObject Main;
     void Start()
     {
-      Screen.fullScreen = false;
+      Screen.fullScreen = true;
     }
   public void Back()
   {

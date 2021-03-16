@@ -7,7 +7,8 @@ public class PlayerMovement : MonoBehaviour
     public float speed;
     private Rigidbody2D rb;
     private Vector2 moveVelocity;
-    public bool canMove = true;
+    [HideInInspector]
+    public bool canMove;
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();

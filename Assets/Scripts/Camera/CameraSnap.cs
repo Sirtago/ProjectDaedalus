@@ -14,7 +14,6 @@ public class CameraSnap : MonoBehaviour
  {
      if(col.gameObject.CompareTag("Player"))
      {
-        Debug.Log("SNAPPED");
         cam.transform.position = new Vector3(transform.position.x, transform.position.y, cam.transform.position.z);
      }
  }
