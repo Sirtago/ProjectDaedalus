@@ -9,6 +9,7 @@ public class PlayerMovement : MonoBehaviour
     private Vector2 moveVelocity;
     [HideInInspector]
     public bool canMove;
+    public Sprite[] sprites;
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
@@ -17,7 +18,6 @@ public class PlayerMovement : MonoBehaviour
     void Update()
     {
         Vector2 moveInput = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical"));
-
         moveVelocity = moveInput.normalized * speed;
     }
     //Character Movement Physics

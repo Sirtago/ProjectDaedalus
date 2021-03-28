@@ -147,7 +147,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ab445e5db4877fb4faa67fe590340448, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemyHealth: 2
+  enemyHealth: 1
   value: 1
 --- !u!114 &8234817874575114196
 MonoBehaviour:
@@ -169,6 +169,7 @@ MonoBehaviour:
   radius: 1.5
   stoppingDistance: 1.75
   nearDistance: 1
+  moveDelay: 0
 --- !u!50 &2604576589024910903
 Rigidbody2D:
   serializedVersion: 4
@@ -391,7 +392,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 385f295ad0064314f8daf491419c73a4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fireRate: 1
+  fireRate: 2
   enemyBullet: {fileID: 8157693608362899544, guid: 9e9391053cd39c840a7dc974b49881e3, type: 3}
   shotPos: {fileID: 7948998481678537573}
 --- !u!1 &8465726530655366271

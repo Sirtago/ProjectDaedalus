@@ -17,9 +17,11 @@ public class EnemyHealth : MonoBehaviour
     public void TakeDamage(float damage)
     {
         enemyHealth -= damage;
+        Debug.Log("Enemy Health Left: " + enemyHealth);
         if(enemyHealth <= 0)
         {
             player.GetComponent<PlayerCurrency>().AddCurrency(value);
+            Debug.Log("Enemy Killed");
             Die();
         }
     }

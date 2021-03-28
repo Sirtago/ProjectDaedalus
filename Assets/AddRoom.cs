@@ -23,6 +23,7 @@ public class AddRoom : MonoBehaviour
     {
       templates.roomCount.Add(this.gameObject);
       isAdded = true;
+      templates.cameraSnaps.Add(GetComponent<CameraSnap>());
     }
   }
 }

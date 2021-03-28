@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine.SceneManagement;
+using UnityEngine.Tilemaps;
 using UnityEngine;
 
 public class RoomTemplates : MonoBehaviour
@@ -18,6 +19,7 @@ public class RoomTemplates : MonoBehaviour
     public float waitTime;
     public GameObject boss;
     public GameObject shop;
+    public List<CameraSnap> cameraSnaps;
     [HideInInspector]
     public bool SpawnedBoss;
 
@@ -25,6 +27,16 @@ public class RoomTemplates : MonoBehaviour
     {
         if(waitTime <= 0 && SpawnedBoss == false)
         {
+            // if(cameraSnaps.Count == roomCount.Count)
+            // {
+            //     foreach(CameraSnap cam in cameraSnaps)
+            //     {
+            //         if(cam.isSnapped)
+            //         {
+            //             cam.GetComponentInChildren<TilemapRenderer>().enabled = true;
+            //         }else{cam.GetComponentInChildren<TilemapRenderer>().enabled = false;}
+            //     }
+            // }
              if(specialRooms.Count < 2 || roomCount.Count - 1 < requiredRooms)
             {
                 Scene scene = SceneManager.GetActiveScene();

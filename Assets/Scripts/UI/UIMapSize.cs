@@ -11,7 +11,7 @@ public class UIMapSize : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        cam = GameObject.FindGameObjectWithTag("Player").GetComponentInChildren<Camera>();
+        cam = GameObject.Find("MiniMap").GetComponentInChildren<Camera>();
     }
 
     // Update is called once per frame
